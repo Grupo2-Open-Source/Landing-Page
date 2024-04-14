@@ -15,7 +15,7 @@ header {
         font-weight: bold;
         .nav-logo {
             font-size: 2em;
-            width: 25%;  /* adjust as needed */
+            width: 114px  /* adjust as needed */
         }
         .nav-menu {
             display: flex;
@@ -43,8 +43,9 @@ header {
 }
 
 .hero {
-    background-image: url("img/flexpal_banner.PNG");
+    background-image: url("img/gymfinity_banner.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
     &:after {
@@ -56,7 +57,7 @@ header {
         height: 100%;
     }
     .hero-content {
-        height: 40rem;
+        height: 100rem;
         display: grid;
         place-content: center;
         text-align: center;
