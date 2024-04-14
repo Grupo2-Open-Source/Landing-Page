@@ -1,1 +1,2 @@
-# Landing-Page
+# Landing Page Open Source
+FLEXPAL Landing Page
