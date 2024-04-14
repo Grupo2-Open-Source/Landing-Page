@@ -1,0 +1,250 @@
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 6rem;
+    color: black;
+    box-shadow: black 0 0 10px 0;
+    line-height: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    .nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        .nav-logo {
+            font-size: 2em;
+            width: 25%;  /* adjust as needed */
+        }
+        .nav-menu {
+            display: flex;
+            gap: 3rem;
+            .nav-links {
+                display: flex;
+                justify-content: space-between;
+                gap: 3rem;
+
+            }
+            .nav-btn {
+                background-color: #195fa4;
+                color: #fff;
+                border-radius: 10px;
+                transition: background-color 0.2s ease-in-out;
+                height: 50%;
+                padding: 0 1rem;
+                margin: auto;
+                &:hover {
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    background-image: url("img/flexpal_banner.PNG");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+    }
+    .hero-content {
+        height: 40rem;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+        & h1 {
+            font-size: 5em;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        & p {
+            font-size: 1.5rem;
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}
+.About_Us{
+    .met_us{
+        text-align: left;
+    }
+    .mission_objective{
+        margin-top: 30px;
+        text-align: right;
+    }
+    & h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    & p {
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 1px;
+        white-space: pre-line;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    & i{
+        color: #f5f5f5;
+    }
+}
+.destin {
+    .destin-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        .card {
+            max-width: min(30rem, 100%);
+            & img {
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+            .info {
+                padding: 1.5rem;
+                text-align: center;
+                & h2 {
+                    font-size: 1.5em;
+                    margin-bottom: 1rem;
+                    font-weight: bold;
+                }
+                & p {
+                    font-size: 1em;
+                    color: #777;
+                    width: 70%;
+                    letter-spacing: 1px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+.testi {
+    .testi-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .card {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            max-width: 40rem;
+            .card1{
+            background-color: #195fa4;
+             }
+            img{
+                width: 50em;
+                height: 17em;
+                border-radius: 10em;
+            }
+            .info{
+                margin-left: 2em;
+            }
+            .comment {
+                font-size: 1.2em;
+                margin-bottom: 1rem;
+            }
+            .user {
+                font-size: 1em;
+                color: white;
+            }
+        }
+    }
+    #card1{
+        background-color: #2c70ad;
+    }
+    #card2{
+        background-color: #afacac;
+    }
+    #font{
+        color: black;
+    }
+}
+
+.contact {
+    .contact-content {
+        width: min(50rem, 100%);
+        margin: auto;
+        background-color: #f9f9f9;
+        padding: 4rem;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .title {
+            padding-bottom: 1rem;
+        }
+        .sub-title {
+            font-size: 1.3em;
+            padding-bottom: 2rem;
+            text-align: center;
+            color: #777;
+        }
+        & form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & label {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-align: left;
+                width: 100%;
+            }
+
+            & input[type="text"],
+            & input[type="email"],
+            & textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            & textarea {
+                resize: vertical;
+                height: 150px;
+            }
+
+            & button[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out;
+            }
+
+            & button[type="submit"]:hover {
+                background-color: #555;
+            }
+        }
+
+
+    }
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 7rem;
+}
