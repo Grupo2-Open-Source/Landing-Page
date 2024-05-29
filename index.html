@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/base.css">
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/logo-app.png">
 </head>
 <body>
 <header>
@@ -27,7 +28,7 @@
                 <li><a href="#testimonials">Testimonios</a></li>
                 <li><a href="#contact">Contáctanos</a></li>
             </ul>
-            <button class="nav-btn">Iniciar Sesión</button>
+            <button class="nav-btn" onclick="redirectToWebApp()">Iniciar Sesión</button>
         </div>
     </nav>
 </header>
@@ -181,3 +182,8 @@
 </body>
 </html>
 
+<script>
+    function redirectToWebApp() {
+        window.location.href = 'https://master--flex-pal-frontendapp.netlify.app';
+    }
+</script>
