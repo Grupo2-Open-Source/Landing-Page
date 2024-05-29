@@ -87,11 +87,12 @@ section {
     padding: 0 5%;
 }
 .title {
-    font-size: 3em;
-    padding-bottom: 5rem;
+    font-size: 2.5em;
+    padding-bottom: 3rem;
     font-weight: bold;
     text-align: center;
 }
+
 .btn {
     display: inline-block;
     background-color: #333;
@@ -108,15 +109,17 @@ section {
 .btn-2 {
     display: inline-block;
     width: 100%;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     padding: 1rem;
     border-radius: 50px;
     text-decoration: none;
     margin-top: 1rem;
     transition: background-color 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     &:hover {
-        background-color: #555;
+        background: #888888;
+        color: #fff;
     }
 }
 .card {
