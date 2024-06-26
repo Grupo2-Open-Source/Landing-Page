@@ -256,3 +256,56 @@ footer {
     padding: 1.5rem;
     margin-top: 7rem;
 }
+
+/* Estilos para la sección de videos */
+.videos {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.videos .title {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-content iframe {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .video-content iframe {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilos para los títulos de los videos */
+.video-content h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los iframes de los videos */
+.video-content iframe {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.video-content iframe:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}

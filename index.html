@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,11 +22,12 @@
         </a>
         <div class="nav-menu">
             <ul class="nav-links">
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#About_Us">Quiénes Somos</a></li>
-                <li><a href="#destinations">Suscripciones</a></li>
-                <li><a href="#testimonials">Testimonios</a></li>
-                <li><a href="#contact">Contáctanos</a></li>
+                <li><a href="#hero" id="home">Inicio</a></li>
+                <li><a href="#About_Us" id="aboutUs">Quiénes Somos</a></li>
+                <li><a href="#destinations" id="subscriptions">Suscripciones</a></li>
+                <li><a href="#testimonials" id="testimonialsNav">Testimonios</a></li>
+                <li><a href="#contact" id="contactNav">Contáctanos</a></li>
+                <button class="nav-btn" id="languageButton">Cambiar idioma</button>
             </ul>
             <button class="nav-btn" onclick="redirectToWebApp()">Iniciar Sesión</button>
         </div>
@@ -37,77 +38,79 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Bienvenido a FlexPal</h1>
-                <p>Encuentra libertad en cada movimiento y consigue aquel cuerpo soñado y saludable que estas buscando </p>
-                <a href="#destinations" class="btn-2">Descubre los planes que tenemos para ti</a>
+                <h1 id="welcome">Bienvenido a FlexPal</h1>
+                <p id="heroDescription">Encuentra libertad en cada movimiento y consigue aquel cuerpo soñado y saludable que estás buscando.</p>
+                <a href="#destinations" class="btn-2" id="discoverPlans">Descubre los planes que tenemos para ti</a>
             </div>
         </div>
     </section>
-    
-    <section class = "About_Us" id="About_Us">
-        <div class = "container">
-            <div class = "met_us">
-                <h1 class = "title">¡Conócenos!</h1>
-                <h2>¿Quiénes somos?</h2>
-                <p>Somos una startup llamada 'Gymfinity'. Un grupo de personas que se han unido para crear una 
-                   comunidad físicamente activa y saludable, brindando funciones que satisfacen la conveniencia 
-                   de todos nuestros usuarios.</p>
+
+    <section class="About_Us" id="About_Us">
+        <div class="container">
+            <div class="met_us">
+                <h1 class="title" id="aboutUsTitle">¡Conócenos!</h1>
+                <h2 id="whoWeAre">¿Quiénes somos?</h2>
+                <p id="whoWeAreDescription">Somos una startup llamada 'Gymfinity'. Un grupo de personas que se han unido para crear una comunidad físicamente activa y saludable, brindando funciones que satisfacen la conveniencia de todos nuestros usuarios.</p>
             </div>
-            <div class = "mission_objective">
-                <h2>Visión y objetivo</h2>
-                    <p><b>Misión:</b><i>_________________________________________________</i>
-                        "Nuestro misión es fomentar una vida saludable a través de 
-                        consejos prácticos acerca de ejercicios y nutrición, ayudando a 
-                        las personas a alcanzar sus objetivos."
-                    <p><b>Objetivo:</b><i>________________________________________________</i>
-                        "Nuestro objetivo es proporcionar información y recursos 
-                        fáciles de entender que inspiren a las personas a adoptar 
-                        hábitos saludables."</p>
+            <div class="mission_objective">
+                <h2 id="visionAndObjective">Visión y objetivo</h2>
+                <p><b id="mission">Misión:</b><i>_________________________________________________</i>
+                    <span id="missionDescription">Nuestra misión es fomentar una vida saludable a través de consejos prácticos acerca de ejercicios y nutrición, ayudando a las personas a alcanzar sus objetivos.</span>
+                <p><b id="objective">Objetivo:</b><i>________________________________________________</i>
+                    <span id="objectiveDescription">Nuestro objetivo es proporcionar información y recursos fáciles de entender que inspiren a las personas a adoptar hábitos saludables.</span>
+                </p>
             </div>
         </div>
     </section>
+
     <section class="destin" id="destinations">
         <div class="container">
-            <h1 class="title">¡Únete a FlexPal hoy!</h1>
+            <h1 class="title" id="joinTitle">¡Únete a FlexPal hoy!</h1>
             <div class="destin-content">
                 <div class="card">
                     <img src="assets/img/img_test.jpeg" alt="Test Plan">
                     <div class="info">
-                        <h2>Plan de Prueba</h2>
-                        <p>Prueba nuestro Plan de Prueba para acceder a planes de nutrición personalizados y rutinas de 
-                            ejercicio adaptadas. ¡Comienza tu viaje hacia un estilo de vida más saludable hoy!
-                        </p>
-                        <a href="#" class="btn">Suscribirse</a>
+                        <h2 id="testPlan">Plan de Prueba</h2>
+                        <p id="testPlanDescription">Prueba nuestro Plan de Prueba para acceder a planes de nutrición personalizados y rutinas de ejercicio adaptadas. ¡Comienza tu viaje hacia un estilo de vida más saludable hoy!</p>
+                        <a href="#" class="btn" id="subscribe1">Suscribirse</a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="assets/img/img_mensual.jpeg" alt="Monthly Plan">
                     <div class="info">
-                        <h2>Plan Mensual</h2>
-                        <p>Consigue resultados sostenibles con nuestro Plan Mensual. Accede a planes de nutrición personalizados, entrenadores expertos y seguimiento de progreso.
-                            ¡Alcanza tus metas de fitness mes a mes!
-                        </p>
-                        <a href="#" class="btn">Suscribirse</a>
+                        <h2 id="monthlyPlan">Plan Mensual</h2>
+                        <p id="monthlyPlanDescription">Consigue resultados sostenibles con nuestro Plan Mensual. Accede a planes de nutrición personalizados, entrenadores expertos y seguimiento de progreso. ¡Alcanza tus metas de fitness mes a mes!</p>
+                        <a href="#" class="btn" id="subscribe2">Suscribirse</a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="assets/img/img_anual.jpeg" alt="Annual Plan">
                     <div class="info">
-                        <h2>Plan Anual</h2>
-                        <p>Comprométete con tu bienestar con nuestro Plan Anual. Accede a todos los beneficios de 
-                            FitHub durante todo el año. ¡Haz de tu salud una prioridad y alcanza tus objetivos de fitness!
-                        </br>
-                        </p>
-                        <a href="#" class="btn">Suscribirse</a>
+                        <h2 id="annualPlan">Plan Anual</h2>
+                        <p id="annualPlanDescription">Comprométete con tu bienestar con nuestro Plan Anual. Accede a todos los beneficios de FitHub durante todo el año. ¡Haz de tu salud una prioridad y alcanza tus objetivos de fitness!</p>
+                        <a href="#" class="btn" id="subscribe3">Suscribirse</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="videos" id="videos">
+        <div class="container">
+            <h1 class="title" id="videosTitle">Nuestros Videos</h1>
+            <div class="video-content">
+                <h2 id="aboutTeam">Sobre el Equipo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Tv6O6UXbzG0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h2 id="aboutProduct">Sobre el Producto</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GprASWHSfjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
     <section class="testi" id="testimonials">
         <div class="container">
-            <h1 class="title">Testimonios de Usuarios</h1>
+            <h1 class="title" id="testimonialsTitle">Testimonios de Usuarios</h1>
             <div class="testi-content">
                 <div class="card 1" id="card1">
                     <div>
@@ -115,8 +118,8 @@
                     </div>
 
                     <div class="info">
-                        <p class="comment"> "Buscaba una aplicación que me conectara con usuarios que buscaran mi especialidad, gracias a FlexPal, al fin lo encontré."</p>
-                        <p class="user">- Renzo Enciso</p>
+                        <p class="comment" id="testimonial1">"Buscaba una aplicación que me conectara con usuarios que buscaran mi especialidad, gracias a FlexPal, al fin lo encontré."</p>
+                        <p class="user" id="user1">- Renzo Enciso</p>
                     </div>
 
                 </div>
@@ -126,18 +129,18 @@
                     </div>
 
                     <div class="info">
-                        <p class="comment">"Me encanta cómo la aplicación facilita el seguimiento diario de mi progreso y me brinda el apoyo necesario para mantenerme enfocado en mis objetivos de salud."</p>
-                        <p class="user">- Rosa Barrios</p>
+                        <p class="comment" id="testimonial2">"Me encanta cómo la aplicación facilita el seguimiento diario de mi progreso y me brinda el apoyo necesario para mantenerme enfocado en mis objetivos de salud."</p>
+                        <p class="user" id="user2">- Rosa Barrios</p>
                     </div>
                 </div>
-                <div class="card" >
+                <div class="card">
                     <div>
                         <img src="assets/img/testi-user3.png" >
                     </div>
 
-                    <div class="info" >
-                        <p class="comment">"Los recursos de la aplicación facilitan mi labor como coach, permitiéndome brindar un apoyo más efectivo y personalizado a mis clientes."</p>
-                        <p class="user" id="font">- Andrés Torres</p>
+                    <div class="info">
+                        <p class="comment" id="testimonial3">"Los recursos de la aplicación facilitan mi labor como coach, permitiéndome brindar un apoyo más efectivo y personalizado a mis clientes."</p>
+                        <p class="user" id="user3">- Andrés Torres</p>
                     </div>
                 </div>
             </div>
@@ -147,38 +150,37 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-content">
-                <h1 class="title">¡Contáctanos!</h1>
-                <h2 class="sub-title">En FlexPal, valoramos cada una de tus preguntas, comentarios y sugerencias. Nuestro equipo está aquí para proporcionarte la ayuda que necesitas.<br> ¡No dudes en contactarnos!</h2>
+                <h1 class="title" id="contactUsTitle">¡Contáctanos!</h1>
+                <p id="contactUsDescription">En FlexPal, valoramos cada una de tus preguntas, comentarios y sugerencias. Nuestro equipo está aquí para proporcionarte la ayuda que necesitas. ¡No dudes en contactarnos!</p>
                 <form action="" method="POST">
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre" id="labelNombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" aria-label="Nombre" required>
 
-                    <label for="correo">Correo Electrónico:</label>
+                    <label for="correo" id="labelCorreo">Correo Electrónico:</label>
                     <input type="email" id="correo" name="correo" placeholder="email@example.com" aria-label="Correo Electrónico" required>
 
-                    <label for="telefono">Numero de Teléfono:</label>
+                    <label for="telefono" id="labelTelefono">Numero de Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" placeholder="+51 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-label="Numero de Teléfono" required>
 
-                    <label for="direccion">Dirección:</label>
+                    <label for="direccion" id="labelDireccion">Dirección:</label>
                     <input type="text" id="direccion" name="direccion" placeholder="123 Calle Principal" aria-label="Dirección" required>
 
-                    <label for="contenido">Contenido:</label>
+                    <label for="contenido" id="labelContenido">Contenido:</label>
                     <textarea id="contenido" name="contenido" rows="4" placeholder="Escribe tu mensaje aquí" aria-label="Contenido" required></textarea>
 
-                    <button type="submit" class="btn">Enviar</button>
+                    <button type="submit" class="btn" id="btnEnviar">Enviar</button>
                 </form>
             </div>
         </div>
     </section>
-
 </main>
 
 <footer>
-    <p>&copy; 2024 FlexPal App - Todos los derechos reservados</p>
-    <p>Dirección: Av Alameda San Marcos 11, Chorrillos 15067</p>
-    <p>Teléfono: (123) 781-4567 | Email: info@FlexPal.com</p>
+    <div class="container">
+        <p>&copy; 2023 FlexPal. Todos los derechos reservados.</p>
+    </div>
 </footer>
-
+<script src="assets/translations.js"></script>
 </body>
 </html>
 
